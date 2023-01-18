@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#blackjack</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./cute-alert-master/style.css">
+</head>
+
+<body>
+    <div class="split left">
+        <header class="centered jumbo-text">
+            <h1>#blackjack</h1>
+            <div class="small-text">
+                <h2>Rules !!!</h2>
+                <ol>
+                    <li>
+                        <!-- Rule 1 -->
+                    </li>
+                    <li>
+                        <!-- Rule 2 -->
+                        <ul class="sublist">
+                            <li>
+                                <!-- sub-rule 1 -->
+                            </li>
+                            <li> 
+                                <!-- sub-rule 2 -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- Rule 3 -->
+                        <ul class="sublist">
+                            <li> 
+                                <!-- sub-rule 1 -->
+                            </li>
+                            <li> 
+                                <!-- sub-rule 2 -->
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <!-- Rule 4 -->
+                    </li>
+                    <li>
+                        <!-- Rule 5 -->
+                    </li>
+                </ol>
+            </div>
+        </header>
+        <!--  -->
+    </div>
+    <!-- <hr> -->
+    <div class="split right">
+        <div class="board">
+            <h1>Dealer:</h1>
+            <div id="dealerCards">
+                <div id="card1"></div>
+                <div id="card2"></div>
+            </div>
+            <!-- <hr /> -->
+            <h1>Player:</h1>
+            <div id="playerCards">
+                <div id="playerCard1"></div>
+                <div id="playerCard2"></div>
+                <div id="playerCard3"></div>
+                <div id="playerCard4"></div>
+            </div>
+            <div>
+                <button onclick={stand(this)}>Stand</button>
+                <button id="deal" onclick={hit(this)}>Hit</button>
+            </div>
+        </div>
+    </div>
+    <script src="./cute-alert-master/cute-alert.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
