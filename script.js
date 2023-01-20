@@ -34,8 +34,8 @@
 class Deck {
     constructor() {
         this.deck = [];
-        this.reset(); //Add 52 cards to the deck
-        this.shuffle(); //Suffle the deck
+        // this.reset(); //Add 52 cards to the deck
+        // this.shuffle(); //Suffle the deck
     } //End of constructor
 
 
@@ -45,6 +45,11 @@ class Deck {
      */
     reset() {
         // write your code here
+        let arr = buildCards(false);
+        for(let i=0;i<arr.length;i++){
+            this.deck.push(arr[i]);
+        }
+        return this.deck;
 
     } //End of reset()
 
@@ -54,7 +59,14 @@ class Deck {
      */
     shuffle() {
         // write your code here
-        
+        for(let i=0;i<this.deck.length;i++){
+            let n = Math.floor(Math.random() * deck.length)
+
+            let temp = deck [i];
+            deck[i] = deck[n];
+            deck[n] = temp;
+        }
+        return this.deck;
     } //End of shuffle()
 
     /**
@@ -63,6 +75,7 @@ class Deck {
      */
     deal() {
         // write your code here
+        return this.deck.pop();
 
     } //End of deal()
 
@@ -72,6 +85,7 @@ class Deck {
      */
     isEmpty() {
         // write your code here
+        return this.deck.length === 0;
 
     } //End of isEmpty()
 
@@ -81,6 +95,7 @@ class Deck {
      */
     length() {
         // write your code here
+        return this.deck.length;
 
     } //End of length()
 
