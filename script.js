@@ -49,6 +49,7 @@ class Deck {
         for(let i=0;i<arr.length;i++){
             this.deck.push(arr[i]);
         }
+        //return this.deck;
         return this.deck;
 
     } //End of reset()
